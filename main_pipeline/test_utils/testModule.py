@@ -29,17 +29,26 @@ class TestModule:
             return origin.startswith(self.stdlib_path)
         except Exception:
             return False
-
-    def is_local_module(self, module_name: str) -> bool:
-        """Check if a module is a local module within the repository."""
+        
+    def is_local_module(self, module_name: str):
+        """
+        Check if a module is a local module within the repository or notebook folder.
+        Returns:
+            (bool, str|None): (is_local, origin_path)
+        """
         try:
             spec = importlib.util.find_spec(module_name)
             if not spec or not spec.origin:
-                return False
+                return False, None
+
             origin = os.path.abspath(spec.origin)
-            return origin.startswith(self.repo_path)
+            nb_dir = os.path.dirname(self.nb_path)
+
+            is_local = origin.startswith(self.repo_path) or origin.startswith(nb_dir)
+            return is_local, origin
         except Exception:
-            return False
+            return False, None
+
 
 
     def analyze(self):

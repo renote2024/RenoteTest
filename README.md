@@ -9,7 +9,7 @@ Click here for [GitHub repository of previous work](https://github.com/renote202
 * **Waris Gill**: Ph.D. Candidate at Virginia Tech (<waris@vt.edu>)
 * **Muhammad Ali Gulzar**: Assistant Professor at Virginia Tech (<gulzar@vt.edu>)
 
-**Description:** 
+**Description:** A lightweight utility that automatically generates test cases to validate different aspects of Jupyter notebooks. It produces module-availability tests (to check required imports), file-access tests (to ensure referenced input files exist and are readable), and linear-execution tests (to verify whether the notebook runs sequentially without interruption). Together, these tests help identify missing dependencies, broken data paths, and execution failures, providing deeper insights into notebook executability.
 
 
 ## Prerequisites

@@ -19,10 +19,13 @@ Click here for [GitHub repository of previous work](https://github.com/renote202
 - Sufficient disk space for caching and virtual environments
 
 ## Pre-execution Preparation
-To replicate the experiment, you will need a number of repositories cloned in your local machine and a CSV file containing the information of all repositories and their notebooks (require fields: project_path (path to the repository in your working directory) and ipynb_files (list of notebook file paths in that repository). You can do this by iterating through all repositories and retrieving the path of all notebook files for each repository.
-We have provided the URL links to all repositories analyzed in our experiment in the CSV file `dataset_results.csv` (marked as the `url` column of the file).
+To replicate the experiment, you will need to clone a number of repositories onto your local machine, preferably outside the program’s directory.
+We provide a folder containing GitHub links to all repositories analyzed in the 2024 and 2025 datasets.
 
-## Installation
+**Note:** Because of the large number of repositories, we are unable to distribute the complete dataset.
+
+
+## Installation and Preparation
 
 1. Clone the repository:
 ```bash
@@ -30,25 +33,26 @@ git clone https://github.com/renote2024/RenoteTest.git
 cd RenoteTest
 ```
 
-2. Set up virtual environments for repository analysis in `create_envs.py`:
-- Edit the number of virtual environments you want to create (if you want to run in parallel, or 1 if you want to run sequentially).
-- Edit the paths for virtual environments
-
-```python
-backup_envs_path = "path_to_your_backup_envs"
-source_envs_path = "path_to_your_source_envs"
-```
-- Run
-```bash
-python main_pipeline/all_utils/create_venv.py
-```
-
-3. Install the required dependencies:
+2. Install the required dependencies:
 ```bash
 pip install requirements.txt
 ```
 
-## Run the Program
+3. Set up virtual environments for repository analysis in `create_envs.py`:
+```bash
+python main_pipeline/all_utils/create_venv.py --source_path <path/to/source/envs> --backup_path <path/to/backup/envs> --num_envs <number of venv>
+```
+
+If you want to run the program sequentially, 1 venv is enough. If you want to run in parallel, you can decide the number of venvs based on your CPU and GPU capacities.
+
+4. Prepare the dataset
+```bash
+python -m main_pipeline.all_utils.prepare --root_dir <path/to/all/repos> --output <path/to/repo/nb/csv>
+```
+
+ **Note**: <path/to/repo/nb/csv> is the path that contains all repository paths and their corresponding lists of notebook paths within each repository.
+
+## Run the program
 1. Execute analysis:
 ```bash
 sudo chattr -R +i ../RenoteTest/ && python -m main_pipeline.main101.main102.main --repo_nb_csv_path <path/to/repo/nb/csv> --json_paths <path/to/a/json/dir> --results_cache_path <path/to/results/cache/dir> --err_cache_path <path/to/error/cache/dir> --resume <0 or 1> --backup_envs_path <path/to/backup/envs/dir> --source_envs_path <path/to/source/envs/dir>
@@ -58,35 +62,16 @@ sudo chattr -R +i ../RenoteTest/ && python -m main_pipeline.main101.main102.main
 - <path/to/results/cache/dir>: path to a directory to store results
 - <path/to/error/cache/dir>: path to a directory to store error notebooks
 - resume: 1 when you want to run all notebooks and check if notebooks have already been evaluated, and 0 otherwise.
+- <path/to/backup/envs/dir>: path to your backup venv directory
+- <path/to/source/envs/dir>: path to your source venv directory
 
   **Note:**
+    - We recommend running this program inside a protected path by `sudo chattr -R +i ../RenoteTest/`. To edit and unlock permission: `sudo chattr -R -i ../RenoteTest/`
     - We recommend these paths are outside of the program's directory to avoid unwanted behaviors caused by notebooks themselves.
-    - The program can be executed in 2 modes (sequential or parallel). Thus, before running the script above, adjust the code to your preferred mode, simply by uncommenting the line you want to execute and commenting out the line you do not want to execute.
+    - The program can be executed in 2 modes (sequential or parallel). Thus, before running the script above, adjust the code to your preferred mode, simply by uncommenting the line you want to execute and commenting out the line you do not want to execute. If run in parallel, please specify the number of workers `num_envs` (should be equal to the number of venvs created).
 
 2. If you want to view the results in CSV:
 ```bash
 # In project main's directory
 python main_pipeline/all_utils/convert_cache_to_csv.py --cache_path <path/to/results/cache/dir> --csv <path/to/result/csv/file>
 ```
-
-### CSV File `data_results.csv` Content Overview
-
-| **Column Name**               | **Description**                                                                                              |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------|
-| **Total Code Cells**           | Total number of code cells in the notebook.                                                                 |
-| **Initial_Status**             | Notebook's executability status before restoration (`executable`, `NameError`, etc.).|
-| **Initial_max_execute_cells**  | Maximum number of cells executed successfully before restoration.                                           |
-| **Final_Status**               | Executability status after restoration.                                                                     |
-| **Final_max_execute_cells**    | Maximum number of cells executed successfully after restoration.                                            |
-| **Increased_execution_cells**  | Additional cells executed post-restoration (`Final - Initial`).                                             |
-| **Increased_execution_percentage** | Percentage improvement in execution success.                                                              |
-| **all_unique_errors_during_execution** | List of unique error types encountered during execution.                                                |
-| **total_module_not_found**     | Count of `ModuleNotFoundError` occurrences.                                                                 |
-| **total_file_not_found**       | Count of `FileNotFoundError` occurrences.                                                                   |
-| **total_name_error**           | Count of `NameError` occurrences.                                                                           |
-| **FileCreationError (Manual)** | Notes on manually identified input file creation errors.                                                          |
-| **nb_path**                    | Local file path of the analyzed notebook.                                                                  |
-| **ast_status**                 | Static analysis result for undefined variables, functions, classes, etc. (`no_undefined` if none).                          |
-| **star**                       | Popularity score of the GitHub repository (based on stars).                                                |
-| **repo_path**                  | Local directory path of the repository.                                                                    |
-| **url**                        | GitHub URL of the repository.                                                                              |

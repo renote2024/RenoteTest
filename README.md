@@ -9,14 +9,15 @@ Click here for [GitHub repository of previous work](https://github.com/renote202
 * **Waris Gill**: Ph.D. Candidate at Virginia Tech (<waris@vt.edu>)
 * **Muhammad Ali Gulzar**: Assistant Professor at Virginia Tech (<gulzar@vt.edu>)
 
-**Description:** A robust Python-based analyzer for analyzing, restoring, and executing Jupyter notebooks at scale. This tool handles common execution errors by automatically fixing missing dependencies, file paths, and variable definition issues.
+**Description:** 
 
 
 ## Prerequisites
 
 - Python 3.12+
 - Virtual environment management capabilities
-- Sufficient disk space for caching and virtual environments
+- Sufficient disk space for caching, virtual environments, and cloned repositories
+- LLM model [Gemma3:12b](https://ollama.com/library/gemma3). You can use other LLM models of preference. Make sure to change it in [localOllama.py](https://github.com/renote2024/RenoteTest/blob/main/main_pipeline/renote_utils/localOllama.py)
 
 ## Pre-execution Preparation
 To replicate the experiment, you will need to clone a number of repositories onto your local machine, preferably outside the program’s directory.

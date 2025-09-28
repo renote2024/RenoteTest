@@ -6,8 +6,6 @@ import argparse
 def main(cache_path, csv_path):
     cache = Index(cache_path)
     os.makedirs(os.path.dirname(csv_path), exist_ok=True)
-    # cache.clear()
-    # results = [v for k, v in cache.items()]
     results = [{"nb_path": k, **v} for k, v in cache.items()]
     df = pd.DataFrame(results)
     df.to_csv(csv_path)

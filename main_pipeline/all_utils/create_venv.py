@@ -1,6 +1,7 @@
 import subprocess
 import os
 from tqdm import tqdm
+import argparse
 
 def create_and_setup_venv(base_path, venv_name):
     venv_path = os.path.join(base_path, venv_name)
@@ -29,18 +30,24 @@ def copy_to_backup(venv_name, source_path, backup_path):
     else:
         print(f"Source virtual environment {source_env} does not exist.")
 
-def main():
-    source_path = "/home/chat/localgpt/vars_pipeline/envs/source_envs"  # Change this to the path where you want to create the virtual environments
-    backup_path = "/home/chat/localgpt/vars_pipeline/envs/backup_envs"
+def main(source_path, backup_path, num_envs):
+    os.makedirs(source_path, exist_ok=True)
+    os.makedirs(backup_path, exist_ok=True)
 
-    if not os.path.exists(backup_path):
-        os.makedirs(backup_path)
-
-    num_envs = 32       # Change this to the number of virtual environments you want to create
     for i in tqdm(range(1, num_envs + 1)):
         venv_name = f'nb{i}_venv'
         create_and_setup_venv(source_path, venv_name)
         copy_to_backup(venv_name, source_path, backup_path)
 
 if __name__ == "__main__":
-    main()
+    arg_parser = argparse.ArgumentParser(description="Create and backup multiple virtual environments.")
+    arg_parser.add_argument('--source_path', type=str, required=True, help="Path to create virtual environments")
+    arg_parser.add_argument('--backup_path', type=str, required=True, help="Path to backup virtual environments")
+    arg_parser.add_argument('--num_envs', type=int, default=31, required=True, help="Number of virtual environments to create")
+    args = arg_parser.parse_args()
+
+    source_path = args.source_path
+    backup_path = args.backup_path
+    num_envs = args.num_envs
+
+    main(source_path, backup_path, num_envs)

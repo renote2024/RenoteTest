@@ -75,7 +75,7 @@ class TestFiles:
             return False
         except Exception:
             return False
-
+        
 
     def test_file_operations(self, result):
         """
@@ -98,11 +98,14 @@ class TestFiles:
                 op = op_file.get('op')
                 file = op_file.get('file')
 
-                if "VirtualFile" in file:
+                file_basename = os.path.basename(file) if file else ""
+                if not file or (file_basename.startswith("<") and file_basename.endswith(">")) or ("<" in file_basename and ">" in file_basename) or "VirtualFile" in file:
                     continue
 
                 try:
                     file_norm = self._normalize_path(file)
+                    if file_norm is None:
+                        continue
 
                     # Avoid checking env package files
                     if "site-packages" in file_norm or "dist-packages" in file_norm:
@@ -123,11 +126,13 @@ class TestFiles:
 
                             if prev_file == file:
                                 if prev_op in ['write', 'create']:
-                                    existing_files.add(file_norm)
+                                    if file_norm is not None:
+                                        existing_files.add(file_norm)
                                     found = True
                                     break
                                 elif prev_op == 'delete':
-                                    invalid_files.add(file_norm)
+                                    if file_norm is not None:
+                                        invalid_files.add(file_norm)
                                     found = True
                                     break
                         
@@ -146,11 +151,13 @@ class TestFiles:
 
                                 if prev_file == file:
                                     if prev_op in ['write', 'create']:
-                                        existing_files.add(file_norm)
+                                        if file_norm is not None:
+                                            existing_files.add(file_norm)
                                         found = True
                                         break
                                     elif prev_op == 'delete':
-                                        invalid_files.add(file_norm)
+                                        if file_norm is not None:
+                                            invalid_files.add(file_norm)
                                         found = True
                                         break
                             if found:
@@ -161,28 +168,35 @@ class TestFiles:
 
                         # 2. Check if file exists in the filesystem
                         if self._is_file_exist_in_filesystem(file_norm):
-                            existing_files.add(file_norm)
+                            if file_norm is not None:
+                                existing_files.add(file_norm)
                             continue
 
                         try:
                             if self._is_file_exist_in_filesystem(file_norm):
-                                existing_files.add(file_norm)
+                                if file_norm is not None:
+                                    existing_files.add(file_norm)
                                 continue
                             else:
                                 # Check if it's a permission issue
                                 if not os.access(os.path.dirname(file_norm), os.R_OK):
-                                    invalid_files.add(file_norm)
+                                    if file_norm is not None:
+                                        invalid_files.add(file_norm)
                                     continue
                         except PermissionError:
-                            invalid_files.add(file_norm)
+                            if file_norm is not None:
+                                invalid_files.add(file_norm)
                             continue
 
-                        unfound_files.add(file_norm)
+                        if file_norm is not None:
+                            unfound_files.add(file_norm)
                 except PermissionError:
-                    invalid_files.add(file_norm)
+                    if file_norm is not None:
+                        invalid_files.add(file_norm)
                     continue
                 except Exception:
-                    invalid_files.add(file_norm)
+                    if file_norm is not None:
+                        invalid_files.add(file_norm)
                     continue
 
         print_msg(f"- {len(existing_files)} valid path(s)", 5)

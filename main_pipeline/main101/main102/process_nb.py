@@ -442,6 +442,7 @@ def process_nb(nb_path, repo_path, tmp_env_dir):
 
     # Step 8: Combine with fix stats
     renote_result = {**renote_result, **agg_results}
+    print_renote_results(renote_result, 2)
 
     # Step 9: Post-execution test
     print()

@@ -1,0 +1,10 @@
+https://github.com/avantcontra/coding-druid
+https://github.com/GT-Analytics/fuam-basic
+https://github.com/rinikerlab/lightweight-registration
+https://github.com/UrbsLab/STREAMLINE
+https://github.com/sminchisescu-research/imar_vision_datasets_tools
+https://github.com/panoptic-labs/research
+https://github.com/Qiskit/feedback
+https://github.com/HenriquesLab/DL4MicEverywhere
+https://github.com/pthom/litgen
+https://github.com/ad17171717/YouTube-Tutorials

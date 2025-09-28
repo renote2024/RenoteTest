@@ -1,0 +1,10 @@
+https://github.com/Wiktor-99/reinforcement_learning_playground
+https://github.com/CPMpy/PyConA
+https://github.com/sassoftware/model-management-resources
+https://github.com/Stoyan-Zlatev/SEM
+https://github.com/rylativity/container-analytics-platform
+https://github.com/KAUST-Academy/KA-Advanced-Ai-2025
+https://github.com/bbaillif/genbench3d
+https://github.com/inlab-geo/espresso
+https://github.com/isgibbs/DtACI
+https://github.com/popogis24/explained-geospatial

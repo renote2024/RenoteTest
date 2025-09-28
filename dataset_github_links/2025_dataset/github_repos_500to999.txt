@@ -1,0 +1,10 @@
+https://github.com/tanishqkumar/beyond-nanogpt
+https://github.com/benman1/generative_ai_with_langchain
+https://github.com/PolymathicAI/the_well
+https://github.com/SUC-DriverOld/so-vits-svc-Deployment-Documents
+https://github.com/google/eng-edu
+https://github.com/microsoft/RecAI
+https://github.com/InsightSoftwareConsortium/SimpleITK-Notebooks
+https://github.com/Lifelong-Robot-Learning/LIBERO
+https://github.com/milaan9/93_Python_Data_Analytics_Projects
+https://github.com/planetlabs/notebooks

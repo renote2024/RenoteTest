@@ -1,0 +1,10 @@
+https://github.com/tenchi-security/camp
+https://github.com/microsoft/augmented-interpretable-models
+https://github.com/arpitbbhayani/experimental
+https://github.com/rvss-australia/RVSS
+https://github.com/karlstroetmann/Artificial-Intelligence
+https://github.com/pooya-mohammadi/audio-classification-pytorch
+https://github.com/michel-kraemer/actson-rs
+https://github.com/jwala-anirudh/GenAI
+https://github.com/blei-lab/treeffuser
+https://github.com/gcastano/Streamlit-Demo-Apps

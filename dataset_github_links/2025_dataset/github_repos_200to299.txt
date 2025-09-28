@@ -1,0 +1,10 @@
+https://github.com/XuandongZhao/WatermarkAttacker
+https://github.com/dccuchile/CC5205
+https://github.com/noahgift/awslambda
+https://github.com/sovit-123/fasterrcnn-pytorch-training-pipeline
+https://github.com/johnmai-dev/NotebookMLX
+https://github.com/datawhalechina/joyrl-book
+https://github.com/bbrumm/databasestar
+https://github.com/PacktPublishing/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash
+https://github.com/zju-pi/diff-sampler
+https://github.com/mobaidoctor/med-ddpm

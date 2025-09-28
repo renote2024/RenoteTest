@@ -1,0 +1,12 @@
+papermill
+ollama
+joblib
+diskcache
+pandas
+numpy
+pydantic
+nbclient
+nbformat
+nbconvert
+ipykernel
+jupyter

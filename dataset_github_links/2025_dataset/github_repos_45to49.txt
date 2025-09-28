@@ -1,0 +1,10 @@
+https://github.com/PradipNichite/FutureSmart-AI-Blog
+https://github.com/multitalk/awesome-cell-cell-communication
+https://github.com/Akajiaku1/Churn-Prediction-for-Freelance-Teams
+https://github.com/lava-nc/lava-dnf
+https://github.com/tejtw/TQuant-Lab
+https://github.com/cncf/landscape-graph
+https://github.com/wey-gu/grpo-graph-extraction
+https://github.com/zingale/computational_astrophysics
+https://github.com/patrickzib/motiflets
+https://github.com/AIRI-Institute/LLM-Microscope

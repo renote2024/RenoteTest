@@ -1,0 +1,10 @@
+https://github.com/IBM/pymser
+https://github.com/SjulsonLab/generalized_contrastive_PCA
+https://github.com/ciclope-microFE/ciclope
+https://github.com/qq456cvb/CPPF2
+https://github.com/SEMAFORInformatik/femagtools
+https://github.com/RomeroLab/RLXF
+https://github.com/DarkAutumn/triforce
+https://github.com/foursquare/fsq-studio-sdk-examples
+https://github.com/unica-ml/ml
+https://github.com/Zak-Hussain/LLM4BeSci_Ljubljana2025

@@ -1,0 +1,10 @@
+https://github.com/aws-samples/comfyui-on-amazon-sagemaker
+https://github.com/sib-swiss/first-steps-with-python-training
+https://github.com/dicodingacademy/assets
+https://github.com/Zymrael/vortex
+https://github.com/a-milenkin/LLM_practical_course
+https://github.com/SEDenmarkLab/molli
+https://github.com/eteh1/Utilizing-Machine-Learning-and-DSAS-to-Analyze-Historical-Trends-Forecast-Future-Shoreline-Change
+https://github.com/jjcherian/conditional-conformal
+https://github.com/kylesargent/FlowMo
+https://github.com/Blissful-Jasper/jianpu_record

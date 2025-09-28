@@ -1,0 +1,10 @@
+https://github.com/datawhalechina/thorough-pytorch
+https://github.com/google-deepmind/mujoco
+https://github.com/FinanceData/FinanceDataReader
+https://github.com/GAP-LAB-CUHK-SZ/gaustudio
+https://github.com/AI4Finance-Foundation/FinRL-Tutorials
+https://github.com/christophM/interpretable-ml-book
+https://github.com/rasbt/LLMs-from-scratch
+https://github.com/GoogleCloudPlatform/generative-ai
+https://github.com/roatienza/Deep-Learning-Experiments
+https://github.com/magenta/magenta-demos

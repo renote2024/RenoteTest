@@ -1,0 +1,9 @@
+https://github.com/KaziAmitHasan/data-inspector
+https://github.com/JY0284/zizhitongjian
+https://github.com/zhangxulu1996/Compositional-Inversion
+https://github.com/flaport/meow
+https://github.com/nasa/LPDAAC-Data-Resources
+https://github.com/pablo-arantes/Cloud-Bind
+https://github.com/minireference/noBSstats
+https://github.com/aws-samples/sagemaker-feature-store-real-time-recommendations
+https://github.com/trusthlt/nlp-with-deep-learning-lectures

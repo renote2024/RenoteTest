@@ -1,0 +1,10 @@
+https://github.com/pralab/secml
+https://github.com/PatWalters/useful_rdkit_utils
+https://github.com/carbonplan/cmip6-downscaling
+https://github.com/aloctavodia/BAP3
+https://github.com/jupyterlab/jupyterlab-demo
+https://github.com/cloudnativegeo/cloud-optimized-geospatial-formats-guide
+https://github.com/PacktPublishing/Mastering-Reinforcement-Learning-with-Python
+https://github.com/bowang-lab/MedSAM2
+https://github.com/PreferredAI/tutorials
+https://github.com/GoogleCloudPlatform/analytics-componentized-patterns

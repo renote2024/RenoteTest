@@ -1,0 +1,10 @@
+https://github.com/avidaldo/ia24
+https://github.com/UofT-DSI/deep_learning
+https://github.com/prvjapan/pyird
+https://github.com/Image-Analysis-Hub/Pasteur-BioImage-Analysis-Course-2025
+https://github.com/Niatruc/pwn_test
+https://github.com/yulun-rayn/variational-causal-inference
+https://github.com/AnswerDotAI/msglm
+https://github.com/Cimalab-unal/GastroHUN
+https://github.com/ElSacho/MVCS
+https://github.com/Philipp238/parfam

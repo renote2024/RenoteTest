@@ -1,0 +1,10 @@
+https://github.com/UnfoldDataScience/YouTube-Videos-files
+https://github.com/mjhoptics/opticalglass
+https://github.com/yyimingucl/TensorVar
+https://github.com/brianpm/wavenumber_frequency
+https://github.com/HEASARC/PyXspec-Jupyter-notebooks
+https://github.com/AliHabibnia/CMDA_4984_Data_Science_for_Quantitative_Finance
+https://github.com/samirsaci/monte-carlo
+https://github.com/Vector1002/Face_And_Emotion_Detection
+https://github.com/Snowflake-Labs/emerging-solutions-toolbox
+https://github.com/langchain-ai/the-judge

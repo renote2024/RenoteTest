@@ -1,0 +1,10 @@
+https://github.com/cabooster/DeepCAD-RT
+https://github.com/neo4j-product-examples/genai-workshop
+https://github.com/Optimization-Algorithms-Book/Code-Listings
+https://github.com/marclelijveld/Power-BI-Automation
+https://github.com/mikexcohen/Statistics_book
+https://github.com/ermshaua/claspy
+https://github.com/macrocosm-os/apex
+https://github.com/openlandmap/GEDTM30
+https://github.com/zephyr-data-specs/GMNS
+https://github.com/raqueeb/mltraining

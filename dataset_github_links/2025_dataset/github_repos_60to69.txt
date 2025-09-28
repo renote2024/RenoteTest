@@ -1,0 +1,10 @@
+https://github.com/omaratef3221/pytorch_tutorials
+https://github.com/sorokinpf/russian_names
+https://github.com/emdann/milopy
+https://github.com/kapilsinghnegi/Fake-News-Detection
+https://github.com/chadday/nicar_ocr
+https://github.com/ronantakizawa/cacheaugmentedgeneration
+https://github.com/slacgismo/solar-data-tools
+https://github.com/debnsuma/fcc-ai-engineering-aws
+https://github.com/human-pangenomics/hpp_production_workflows
+https://github.com/X-lab2017/open-wonderland

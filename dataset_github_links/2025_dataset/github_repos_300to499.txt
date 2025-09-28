@@ -1,0 +1,10 @@
+https://github.com/krishauser/RoboticSystemsBook
+https://github.com/blackinkkkxi/RAG_langchain
+https://github.com/world-class/notes
+https://github.com/boschresearch/torchphysics
+https://github.com/conda-incubator/condacolab
+https://github.com/fabianabarca/PyX
+https://github.com/databricks/docker-spark-iceberg
+https://github.com/LSSTC-DSFP/LSSTC-DSFP-Sessions
+https://github.com/unskript/Awesome-CloudOps-Automation
+https://github.com/databrickslabs/tempo

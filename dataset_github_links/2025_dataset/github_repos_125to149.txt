@@ -1,0 +1,10 @@
+https://github.com/sayakpaul/maxim-tf
+https://github.com/Project-Platypus/Rhodium
+https://github.com/profConradi/Python_Simulations
+https://github.com/facebookresearch/sparsh
+https://github.com/LarsonLab/MRI-education-resources
+https://github.com/interactivereport/cellxgene_VIP
+https://github.com/mdy666/mdy_triton
+https://github.com/qubvel/transformers-notebooks
+https://github.com/phyworld/phyworld
+https://github.com/raveendratal/PysparkRaveendra

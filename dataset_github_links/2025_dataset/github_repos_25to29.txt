@@ -1,0 +1,10 @@
+https://github.com/jgmsantos/Scripts
+https://github.com/hugobowne/AI-for-SWEs
+https://github.com/DevManpreet5/LLM_from_Scratch
+https://github.com/thalesvalente/teaching
+https://github.com/cjannuzzi/ESW-estrutura-de-dados
+https://github.com/ALucek/ft-modernbert-domain
+https://github.com/FIIT-IAU/IAU-course
+https://github.com/jpata/particleflow
+https://github.com/moeheart/jx3bla
+https://github.com/mehradans92/dZiner

@@ -1,0 +1,10 @@
+https://github.com/easylearningscores/Triton_AI4Earth
+https://github.com/SAP-samples/multimodal-generative-ai-for-bpm
+https://github.com/in-rolls/indicate
+https://github.com/AdaptiveMotorControlLab/modelzoo-figures
+https://github.com/Priyamshu15/ElectricVehicle-Analysis
+https://github.com/brightway-lca/brightway25
+https://github.com/TianyiPeng/causaltensor
+https://github.com/neuropower/neuropower-core
+https://github.com/FernandoCarazoMelo/Machine-Learning-for-Biomedical-Data
+https://github.com/mpcjanssen/tcljupyter

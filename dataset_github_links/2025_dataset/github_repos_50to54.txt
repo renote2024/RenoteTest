@@ -1,0 +1,10 @@
+https://github.com/sunnysavita10/genai_bootcamp
+https://github.com/easonwangzk/MedLLM
+https://github.com/YoniChechik/AI_is_Math
+https://github.com/dianna-ai/dianna
+https://github.com/google-research/swirl-dynamics
+https://github.com/taldatech/ee046211-deep-learning
+https://github.com/ioos/bio_data_guide
+https://github.com/cultivarium/GenomeSPOT
+https://github.com/courtois-neuromod/algonauts_2025.competitors
+https://github.com/SORRY-Bench/sorry-bench

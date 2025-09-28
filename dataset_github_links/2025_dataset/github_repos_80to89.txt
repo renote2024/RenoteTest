@@ -1,0 +1,10 @@
+https://github.com/GeminiLight/awesome-ai-llm4education
+https://github.com/nicolas-dufour/plonk
+https://github.com/torchmd/torchmd-protein-thermodynamics
+https://github.com/wilsonfreitas/python-bizdays
+https://github.com/realyinchen/RAG
+https://github.com/facebookresearch/maws
+https://github.com/zhangbingliang2019/DAPS
+https://github.com/pgmikhael/protgps
+https://github.com/lansinuote/Simple_RLHF
+https://github.com/Baukebrenninkmeijer/table-evaluator

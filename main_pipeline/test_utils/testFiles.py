@@ -99,7 +99,10 @@ class TestFiles:
                 file = op_file.get('file')
 
                 file_basename = os.path.basename(file) if file else ""
-                if not file or (file_basename.startswith("<") and file_basename.endswith(">")) or ("<" in file_basename and ">" in file_basename) or "VirtualFile" in file:
+                if not file or\
+                    ("<" in file_basename and ">" in file_basename) or \
+                    "VirtualFile" in file or \
+                    file_basename.isdigit():
                     continue
 
                 try:

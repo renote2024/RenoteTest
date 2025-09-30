@@ -21,9 +21,9 @@ Click here for [GitHub repository of previous work](https://github.com/renote202
 
 ## Pre-execution Preparation
 To replicate the experiment, you will need to clone a number of repositories onto your local machine, preferably outside the program’s directory.
-We provide a folder containing GitHub links to all repositories analyzed in the 2024 and 2025 datasets.
 
-**Note:** Because of the large number of repositories, we are unable to distribute the complete dataset.
+**Note about Dataset:** Due to the large size of the repositories and notebooks (spanning several terabytes), we are unable to distribute the complete dataset. Instead, we provide a folder containing GitHub links to all repositories analyzed in the 2024 and 2025 datasets, enabling you to clone them and replicate our experiments. If you would like to know the steps we take to stratify repositories and automatically clone them, please contact us.
+
 
 
 ## Installation and Preparation
